@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include"main.h"
-int pow_1(int d, int A);
+int pow_1(int base, int power);
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: is a pointer
@@ -34,7 +34,7 @@ unsigned int binary_to_uint(const char *b)
  * @A: is an int
  * Return: 0 (success)
  */
-int pow_1(int d, int A)
+int pow_1(int base, int power)
 {
 	int i, sum = 1;
 
