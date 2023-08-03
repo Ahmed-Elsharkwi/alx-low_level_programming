@@ -14,7 +14,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	int val = *n;
 	int *p = malloc(sizeof(int) * len(val));
 	unsigned long  int i, l = len(val);
-	unsigned int j, h; 
+	unsigned int j, h;
 	unsigned long int sum = 0;
 
 	if (p == NULL)
@@ -33,7 +33,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	}
 	for (h = 0 ; h < l ; h++)
 	{
-		sum += p[h] * pow_1(2,h);
+		sum += p[h] * pow_1(2, h);
 	}
 	*n = sum;
 	if (n != NULL)
@@ -41,7 +41,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 		free(p);
 		return (1);
 	}
-	free (p);
+	free(p);
 	return (-1);
 }
 /**
