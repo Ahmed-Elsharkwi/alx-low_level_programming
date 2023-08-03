@@ -30,8 +30,8 @@ unsigned int binary_to_uint(const char *b)
 }
 /**
  * pow_1 - calculate the power of any number
- * @d: is an int
- * @A: is an int
+ * @base: is an int
+ * @power: is an int
  * Return: 0 (success)
  */
 int pow_1(int base, int power)
