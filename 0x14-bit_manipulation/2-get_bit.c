@@ -11,21 +11,20 @@ int len(int u);
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int *p = malloc(sizeof(int) * len(n));
-	int i, j, l = len(n);
-	unsigned int count = 0;
+	unsigned int i, l = len(n);
+	unsigned int j;
 
 	if (p == NULL)
 		return (-1);
-	for (i = l - 1 ; i >= 0 ; i--)
+	for (i = 0 ; i < l ; i++)
 	{
 		p[i] = n % 2;
 		n = n / 2;
 	}
-	for (j = l - 1 ; j >= 0 ; j--)
+	for (j = 0 ; j < l ; j++)
 	{
-		if (count == index)
+		if (j == index)
 			return (p[j]);
-		count++;
 	}
 	return (-1);
 }
@@ -36,7 +35,7 @@ int get_bit(unsigned long int n, unsigned int index)
  */
 int len(int u)
 {
-	int count = 0;
+	unsigned int count = 0;
 
 	while (u != 0)
 	{
