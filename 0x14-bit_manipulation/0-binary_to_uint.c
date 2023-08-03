@@ -38,8 +38,8 @@ int pow_1(int base, int power)
 {
 	int i, sum = 1;
 
-	for (i = 0 ; i < A ; i++)
-		sum = sum * d;
+	for (i = 0 ; i < power ; i++)
+		sum = sum * base;
 	return (sum);
 
 }
