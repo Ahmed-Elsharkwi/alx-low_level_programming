@@ -35,7 +35,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	{
 		sum += p[h] * pow_1(2, h);
 	}
-	if (sum == 2000)
+	if (index == 2000)
 		return (-1);
 	*n = sum;
 	if (n != NULL)
