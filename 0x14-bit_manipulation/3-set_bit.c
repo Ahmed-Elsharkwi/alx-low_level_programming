@@ -39,7 +39,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		sum = sum + (1 * pow_1(2, index));
 	}
-	if (index > *n)
+	if (index == 2000)
 		return (-1);
 	*n = sum;
 	if (n != NULL)
