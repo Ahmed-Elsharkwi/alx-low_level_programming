@@ -2,7 +2,7 @@
 /**
  * insert_dnodeint_at_index - insert an element in a specified index
  * @h: is a pointer
- * idx: is an int
+ * @idx: is an int
  * @n: is an int
  * Return: the address of the new element
  */
