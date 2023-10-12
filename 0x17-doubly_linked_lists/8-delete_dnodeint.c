@@ -1,5 +1,5 @@
 #include"lists.h"
-/**  
+/**
  * delete_dnodeint_at_index - delete a node in a specified index
  * @head: is a pointer
  * @index: is an int
@@ -11,9 +11,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *temp_1 = NULL;
 	unsigned int count = 0;
 
-	if (*head == NULL)
-		return (-1);
-	if (index == 0)
+	if (index == 0 && *head != NULL)
 	{
 		if (temp->next != NULL)
 		{
