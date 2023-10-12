@@ -24,10 +24,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			new->prev = temp_1;
 			new->next = temp;
 			temp->prev = new;
+			return (new);
 		}
 		temp_1 = temp;
 		temp = temp->next;
 		count++;
 	}
-	return (new);
+	return (NULL);
 }
