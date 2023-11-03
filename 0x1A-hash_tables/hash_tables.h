@@ -1,5 +1,6 @@
-#ifndef hash_t
-#define hash_t
+#ifndef hash_tables
+#define hash_tables
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
