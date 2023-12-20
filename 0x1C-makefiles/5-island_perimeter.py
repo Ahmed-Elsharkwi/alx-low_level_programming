@@ -3,7 +3,7 @@
 
 
 def island_perimeter(grid):
-    """ 
+    """
     calculate the perimeter of the island by iterating over
     the grid and each time it will find 1 which repersents the land
     it increase the number of lands 1 and after that we will calculate
