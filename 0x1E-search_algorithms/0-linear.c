@@ -1,5 +1,5 @@
 #include "search_algos.h"
-/*
+/**
  * linear_search - get the index of the wanted value
  * @array: array of intgers
  * @size: the size of the array
